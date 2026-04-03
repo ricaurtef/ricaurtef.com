@@ -429,6 +429,79 @@ a.lang-switch:hover { color: var(--text); }
   transform: translate(2px, -2px);
 }
 
+/* ── Certifications ─────────────────────────── */
+
+.certs {
+  border-top: 1px solid var(--connect-bdr);
+}
+
+.certs-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2.5rem 5rem;
+  width: 100%;
+}
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.25rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  width: 140px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+a.cert-card:hover {
+  border-color: var(--teal);
+  box-shadow: 0 4px 28px var(--card-glow-1), 0 1px 6px var(--card-glow-2);
+  transform: translateY(-2px);
+}
+
+.cert-badge {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.cert-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.cert-meta {
+  font-size: 0.7rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.cert-expired {
+  opacity: 0.5;
+}
+
+.cert-expired .cert-meta {
+  color: var(--orange);
+}
+
+.cert-soon {
+  opacity: 0.35;
+  border-style: dashed;
+  cursor: default;
+}
+
 /* ── Footer ──────────────────────────────────── */
 
 .site-footer {
@@ -458,5 +531,11 @@ a.lang-switch:hover { color: var(--text); }
   }
 
   .connect-inner { padding: 3rem 1.25rem 4rem; }
+  .certs-inner   { padding: 3rem 1.25rem 4rem; }
+
+  .cert-grid {
+    justify-content: center;
+  }
+
   .site-footer   { padding: 1rem 1.25rem; }
 }
