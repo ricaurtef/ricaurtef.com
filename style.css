@@ -516,7 +516,13 @@ a.cert-card:hover {
 /* ── Responsive ──────────────────────────────── */
 
 @media (max-width: 600px) {
-  .site-header { padding: 1rem 1.25rem; }
+  .site-header {
+    padding: 1rem 1.25rem;
+  }
+
+  .nav { gap: 0.75rem; }
+
+  .nav-link { display: none; }
 
   .hero {
     flex-direction: column-reverse;
