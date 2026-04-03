@@ -26,6 +26,13 @@ jobs:
           aws-region: us-east-1
           role-chaining: true
 
+      - name: Cache-bust asset references
+        run: |
+          CSS_HASH=$(md5sum style.css | cut -c1-8)
+          JS_HASH=$(md5sum theme.js | cut -c1-8)
+          sed -i "s|style\.css|style.css?v=${CSS_HASH}|g" index.html es/index.html 404.html
+          sed -i "s|theme\.js|theme.js?v=${JS_HASH}|g" index.html es/index.html 404.html
+
       # HTML: short cache (5 min) so visitors see updates quickly
       - name: Sync HTML
         run: |
