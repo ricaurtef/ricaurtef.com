@@ -3,6 +3,12 @@ name: Preview
 on:
   pull_request:
     types: [opened, synchronize, reopened]
+    paths:
+      - "*.html"
+      - "*.css"
+      - "*.js"
+      - "es/**"
+      - "img/**"
 
 permissions:
   contents: read

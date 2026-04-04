@@ -1,7 +1,7 @@
 # ricaurtef.com
 
 ![deploy](https://img.shields.io/github/actions/workflow/status/ricaurtef/ricaurtef.com/deploy.yml?label=deploy&color=83a598)
-![preview](https://img.shields.io/github/actions/workflow/status/ricaurtef/ricaurtef.com/preview.yml?label=preview&color=83a598)
+![preview](https://img.shields.io/github/actions/workflow/status/ricaurtef/ricaurtef.com/preview.yml?label=preview&color=fe8019)
 
 ---
 
