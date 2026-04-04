@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "*.html"
+      - "*.css"
+      - "*.js"
+      - "es/**"
+      - "img/**"
 
 permissions:
   contents: write
