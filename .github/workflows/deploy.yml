@@ -8,6 +8,8 @@ on:
       - "*.html"
       - "*.css"
       - "*.js"
+      - "robots.txt"
+      - "sitemap.xml"
       - "es/**"
       - "img/**"
 
@@ -55,8 +57,8 @@ jobs:
           aws s3 sync . s3://${{ vars.SITE_BUCKET }}/ \
             --cache-control "public, max-age=31536000, immutable" \
             --exclude "*.html" \
+            --exclude ".git*" \
             --exclude ".github/*" \
-            --exclude ".gitignore" \
             --exclude "LICENSE" \
             --exclude "README.md"
 
