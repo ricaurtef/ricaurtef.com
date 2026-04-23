@@ -4,48 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rubén Ricaurte — Ingeniero de Plataforma</title>
-  <meta name="description" content="Siete años trabajando en infraestructura cloud, los últimos dos enfocado en AWS. Diseño pipelines de CI/CD, automatizo flujos operativos y construyo plataformas internas." />
+  <meta name="description" content="Senior Cloud Engineer, siete años en AWS y rumbo a Platform Engineering. El sitio que estás viendo es el artefacto; la infra detrás es la demo." />
+
+  <link rel="canonical" href="https://ricaurtef.com/es/" />
+  <link rel="alternate" hreflang="en" href="https://ricaurtef.com/" />
+  <link rel="alternate" hreflang="es" href="https://ricaurtef.com/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://ricaurtef.com/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ricaurtef.com/es/" />
   <meta property="og:title" content="Rubén Ricaurte — Ingeniero de Plataforma" />
-  <meta property="og:description" content="Siete años trabajando en infraestructura cloud, los últimos dos enfocado en AWS. Diseño pipelines de CI/CD, automatizo flujos operativos y construyo plataformas internas." />
+  <meta property="og:description" content="Senior Cloud Engineer, siete años en AWS y rumbo a Platform Engineering. El sitio que estás viendo es el artefacto; la infra detrás es la demo." />
   <meta property="og:image" content="https://ricaurtef.com/img/og.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Rubén Ricaurte — Ingeniero de Plataforma" />
-  <meta name="twitter:description" content="Siete años trabajando en infraestructura cloud, los últimos dos enfocado en AWS. Diseño pipelines de CI/CD, automatizo flujos operativos y construyo plataformas internas." />
+  <meta name="twitter:description" content="Senior Cloud Engineer, siete años en AWS y rumbo a Platform Engineering. El sitio que estás viendo es el artefacto; la infra detrás es la demo." />
   <meta name="twitter:image" content="https://ricaurtef.com/img/og.jpg" />
 
   <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
   <script src="/theme.js"></script>
 </head>
 <body>
 
-  <header class="site-header">
-    <a href="#" class="logo" aria-label="ricaurtef.com — inicio">
-      <span class="logo-seg-1">ricaurtef</span>
-      <span class="logo-pip pip-1"></span>
-      <span class="logo-pip pip-2"></span>
-      <span class="logo-pip pip-3"></span>
-      <span class="logo-pip pip-4"></span>
-      <span class="logo-pip pip-5"></span>
-      <span class="logo-pip pip-6"></span>
-      <span class="logo-seg-2">$&nbsp;<span class="logo-cursor">_</span></span>
+  <!-- ═══════════════════ HEADER ═══════════════════ -->
+  <header class="header">
+    <a href="#intro" class="prompt-logo" aria-label="ricaurtef.com — inicio">
+      <span class="seg s1" aria-hidden="true" title="Ubuntu">
+        <svg viewBox="0 0 16 16" fill="none">
+          <circle cx="8"    cy="8"    r="6.2" stroke="#ebdbb2" stroke-width="1.3" fill="none"/>
+          <circle cx="13.2" cy="8"    r="1.7" fill="#ebdbb2"/>
+          <circle cx="5.4"  cy="3.5"  r="1.7" fill="#ebdbb2"/>
+          <circle cx="5.4"  cy="12.5" r="1.7" fill="#ebdbb2"/>
+          <circle cx="8"    cy="8"    r="1.3" fill="#ebdbb2"/>
+        </svg>
+      </span>
+      <span class="seg s2">rricaurte</span>
+      <span class="seg s3 hide-sm">~</span>
+      <span class="seg s4 hide-sm" id="clock-seg">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="6"/><path d="M8 5v3.2l2 1.3"/></svg>
+        <span id="clock-txt">--:--</span>
+      </span>
+      <span class="seg s5">$<span class="cursor">_</span></span>
     </a>
-    <nav class="nav">
-      <a class="nav-link" href="#about">Sobre mí</a>
-      <a class="nav-link" href="#connect">Conectar</a>
-      <span class="lang-sep" aria-hidden="true">·</span>
+
+    <nav class="nav" aria-label="Principal">
+      <a class="nav-link" href="#now">Ahora</a>
+      <a class="nav-link" href="#stack">Stack</a>
+      <a class="nav-link" href="#certs">Certs</a>
+      <a class="nav-link" href="#connect">Contacto</a>
+      <span class="sep" aria-hidden="true">·</span>
       <a class="lang-switch" href="/">EN</a>
-      <span class="lang-switch lang-active">ES</span>
-      <span class="lang-sep" aria-hidden="true">·</span>
+      <span class="lang-switch active">ES</span>
+      <span class="sep" aria-hidden="true">·</span>
       <button class="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
@@ -57,123 +74,294 @@
     </nav>
   </header>
 
-  <main>
+  <!-- ═══════════════════ NEOFETCH STRIP ═══════════════════ -->
+  <div class="neofetch-strip" aria-label="estado">
+    <span class="nf"><span class="k">host</span><span class="v">ricaurtef.com</span></span>
+    <span class="nf"><span class="k">loc</span><span class="v">Buenos Aires · AR</span></span>
+    <span class="nf"><span class="k">tz</span><span class="v">UTC−3</span></span>
+    <span class="nf"><span class="k">uptime</span><span class="v">7 años</span></span>
+    <span class="nf"><span class="k">region</span><span class="v">sa-east-1</span></span>
+    <span class="nf"><span class="pulse"></span><span class="v">disponible</span></span>
+  </div>
 
-    <!-- Hero -->
-    <section class="hero" id="about">
+  <div class="wrap">
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section class="hero" id="intro">
       <p class="watermark" aria-hidden="true">基盤</p>
       <div class="hero-inner">
-        <p class="eyebrow">Ingeniero de Plataforma</p>
-        <h1 class="hero-name">Rubén<br>Ricaurte</h1>
-        <p class="hero-bio">
-          Siete años trabajando en infraestructura cloud, los últimos dos
-          enfocado en AWS. Diseño pipelines de CI/CD, automatizo flujos
-          operativos y construyo las plataformas internas que le permiten
-          a los equipos de ingeniería desplegar con confianza. Hoy estoy
-          profundizando en platform engineering — Kubernetes, infraestructura
-          como código a escala, y todo lo que se necesita para convertir un
-          buen proceso de despliegue en uno excelente.
-        </p>
-        <p class="hero-bio">
-          Venezolano en Argentina, eternamente curioso — construí este sitio
-          y toda la infraestructura detrás desde cero, porque creo que la
-          mejor forma de aprender es desplegar.
-        </p>
+        <div class="hero-intro">
+          <div class="eyebrow"><span class="num">01</span> · ingeniero de plataforma</div>
+          <h1>Construyo las <em>plataformas</em> sobre las que otros despliegan.</h1>
+          <p class="lede">
+            Senior Cloud Engineer con siete años de experiencia, metido hasta
+            el cuello en AWS — con base en Buenos Aires, trabajando entre
+            hemisferios.
+          </p>
+          <p class="lede">
+            Venezolano en Argentina, curioso de oficio — construí este sitio y
+            toda la infraestructura detrás desde cero porque creo que la mejor
+            forma de aprender es desplegar.
+          </p>
+        </div>
+        <img class="hero-avatar" src="/img/avatar.webp" alt="Rubén Ricaurte" />
       </div>
-      <img class="hero-avatar" src="/img/avatar.webp" alt="Rubén Ricaurte" />
+
+      <div class="hero-meta">
+        <div class="cell"><div class="k">Foco actual</div><div class="v">Platform Engineering</div></div>
+        <div class="cell"><div class="k">Cloud primario</div><div class="v">AWS</div></div>
+        <div class="cell"><div class="k">IaC</div><div class="v">Terraform</div></div>
+        <div class="cell"><div class="k">Orquestación</div><div class="v">Kubernetes</div></div>
+      </div>
     </section>
 
-    <!-- Conectar -->
-    <section class="connect" id="connect">
-      <div class="connect-inner">
-        <h2 class="section-label">Conectar</h2>
-        <div class="link-row">
+    <!-- ═══════════════════ APPROACH ═══════════════════ -->
+    <aside class="approach" aria-label="enfoque">
+      <p>
+        Platform Engineering es el rumbo que estoy tomando — el siguiente
+        capítulo de DevOps, y todavía me quedan páginas por leer. Lo que me
+        atrapa es la <em>forma</em> del trabajo: automatizar lo complejo y
+        dejar una interfaz limpia por delante, para que los developers avancen
+        por un camino ya trazado en vez de tener que improvisar uno.
+      </p>
+    </aside>
 
-          <a
-            class="link-card"
-            href="https://linkedin.com/in/rubén-ricaurte-francia-0583b5127"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-            <div>
-              <p class="link-title">LinkedIn</p>
-              <p class="link-sub">rubén-ricaurte-francia</p>
+    <!-- ═══════════════════ NOW ═══════════════════ -->
+    <section id="now">
+      <div class="eyebrow"><span class="num">02</span> · en lo que trabajo ahora</div>
+
+      <div class="now-grid">
+
+        <div class="feature">
+          <div>
+            <div class="kicker">proyecto destacado · vivo</div>
+            <h3>aws-cloudfront-site — la infra detrás de este sitio</h3>
+            <p class="lede">
+              Hub-and-spoke de AWS Organizations con Identity Center, federación
+              OIDC con GitHub Actions, S3 + CloudFront + ACM + Route 53, un
+              entorno de preview independiente para cada pull request, y caché
+              estratificada (HTML 5 min, assets 1 año immutable).
+              El sitio que estás mirando es el artefacto; la infra es la demo.
+            </p>
+            <div class="stack">
+              <span class="chip">AWS Organizations</span>
+              <span class="chip">CloudFront</span>
+              <span class="chip">ACM</span>
+              <span class="chip">Route 53</span>
+              <span class="chip">OIDC</span>
+              <span class="chip">GitHub Actions</span>
+              <span class="chip">S3</span>
+              <span class="chip">Terraform</span>
             </div>
-            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            </svg>
-          </a>
+          </div>
+<pre class="ascii" aria-hidden="true">GitHub ──▶ <span class="hl">OIDC</span> ──▶ mgmt acct
+                        │
+                AssumeRole (chain)
+                        │
+                        ▼
+           ┌──── prod acct ─────┐
+           │                    │
+           │  S3 ─▶ <span class="hl">CloudFront</span>  │
+           │            │       │
+           │        ACM + R53   │
+           └────────────┬───────┘
+                        │
+                        ▼
+                  <span class="hl">ricaurtef.com</span>
+                <span class="dim">(tls · sa-east-1)</span></pre>
+        </div>
 
-          <a
-            class="link-card"
-            href="https://github.com/ricaurtef"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-            </svg>
-            <div>
-              <p class="link-title">GitHub</p>
-              <p class="link-sub">ricaurtef</p>
-            </div>
-            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            </svg>
-          </a>
+        <a class="card half" href="https://github.com/ricaurtef/aws-account-foundation" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+          <div class="kicker">laboratorio</div>
+          <h3>aws-account-foundation <span class="meta">repo</span></h3>
+          <p>Organizations, IAM Identity Center, IAM hub-and-spoke. El "día uno" de una cuenta AWS nueva.</p>
+        </a>
 
+      </div>
+    </section>
+
+    <!-- ═══════════════════ STACK ═══════════════════ -->
+    <section id="stack">
+      <div class="eyebrow"><span class="num">03</span> · capacidades</div>
+
+      <div class="skill-group">
+        <h4>Cloud foundations</h4>
+        <div class="skill-row">
+          <span class="skill primary">Multi-account AWS</span>
+          <span class="skill">Organizations · Identity Center</span>
+          <span class="skill">Hub-and-spoke IAM</span>
+          <span class="skill">OIDC federation</span>
+          <span class="skill">Global edge delivery</span>
+          <span class="skill">Linux · On-prem</span>
+          <span class="skill">Docker</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Infrastructure as Code</h4>
+        <div class="skill-row">
+          <span class="skill primary">Terraform</span>
+          <span class="skill">Reusable module libraries</span>
+          <span class="skill">Terragrunt</span>
+          <span class="skill">Ansible</span>
+          <span class="skill">Packer</span>
+          <span class="skill">AWS CDK</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>CI/CD &amp; release engineering</h4>
+        <div class="skill-row">
+          <span class="skill">Pipeline design &amp; migration</span>
+          <span class="skill">GitHub Actions</span>
+          <span class="skill">GitLab CI/CD</span>
+          <span class="skill">Bitbucket Pipelines</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Observability</h4>
+        <div class="skill-row">
+          <span class="skill">Cross-account CloudWatch</span>
+          <span class="skill">Hybrid CloudWatch + Datadog</span>
+          <span class="skill">OpenTelemetry <span class="lvl">· aprendiendo</span></span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Platform practices <span class="lvl">· en construcción</span></h4>
+        <div class="skill-row">
+          <span class="skill">Kubernetes <span class="lvl">· en la roadmap CKA</span></span>
+          <span class="skill">Internal developer platforms</span>
+          <span class="skill">Golden paths</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Lenguajes &amp; scripting</h4>
+        <div class="skill-row">
+          <span class="skill">Python</span>
+          <span class="skill">Bash</span>
+          <span class="skill">HCL</span>
         </div>
       </div>
     </section>
 
-    <!-- Certificaciones -->
-    <section class="certs">
-      <div class="certs-inner">
-        <h2 class="section-label">Certificaciones</h2>
-        <div class="cert-grid">
+    <!-- ═══════════════════ CERTS ═══════════════════ -->
+    <section id="certs">
+      <div class="eyebrow"><span class="num">04</span> · certificaciones &amp; roadmap</div>
 
-          <a class="cert-card" href="https://www.credly.com/badges/abbc6a1b-775e-4097-94bd-52cd3ce60ea1/public_url" target="_blank" rel="noopener noreferrer">
-            <img class="cert-badge" src="/img/certs/aws-developer-associate.png" alt="AWS Certified Developer - Associate" />
-            <p class="cert-name">Developer Associate</p>
-            <p class="cert-meta">AWS · Sep 2025</p>
-          </a>
-
-          <a class="cert-card" href="https://www.credly.com/badges/6fa71384-4bfa-4c03-b66c-ac3dedd6403c/public_url" target="_blank" rel="noopener noreferrer">
-            <img class="cert-badge" src="/img/certs/terraform-associate.png" alt="HashiCorp Certified: Terraform Associate (004)" />
-            <p class="cert-name">Terraform Associate</p>
-            <p class="cert-meta">HashiCorp · Abr 2026</p>
-          </a>
-
-          <div class="cert-card cert-soon">
-            <img class="cert-badge" src="/img/certs/aws-cloudops-associate.png" alt="AWS Certified Cloud Operations Engineer - Associate" />
-            <p class="cert-name">CloudOps Associate</p>
-            <p class="cert-meta">AWS · En progreso</p>
+      <div class="cert-shelf">
+        <a class="cert status-earned" href="https://www.credly.com/badges/abbc6a1b-775e-4097-94bd-52cd3ce60ea1/public_url" target="_blank" rel="noopener noreferrer">
+          <span class="corner" aria-hidden="true"></span>
+          <img src="/img/certs/aws-developer-associate.png" alt="AWS Certified Developer — Associate">
+          <div>
+            <div class="name">AWS Developer — Associate</div>
+            <div class="meta">AWS · obtenida sep 2025</div>
           </div>
-
-          <div class="cert-card cert-soon">
-            <img class="cert-badge" src="/img/certs/aws-devops-professional.png" alt="AWS Certified DevOps Engineer - Professional" />
-            <p class="cert-name">DevOps Professional</p>
-            <p class="cert-meta">AWS · Planeada</p>
+        </a>
+        <a class="cert status-earned" href="https://www.credly.com/badges/6fa71384-4bfa-4c03-b66c-ac3dedd6403c/public_url" target="_blank" rel="noopener noreferrer">
+          <span class="corner" aria-hidden="true"></span>
+          <img src="/img/certs/terraform-associate.png" alt="HashiCorp Certified: Terraform Associate (004)">
+          <div>
+            <div class="name">Terraform Associate (004)</div>
+            <div class="meta">HashiCorp · obtenida abr 2026</div>
           </div>
-
-          <div class="cert-card cert-soon">
-            <img class="cert-badge" src="/img/certs/cka.png" alt="CKA: Certified Kubernetes Administrator" />
-            <p class="cert-name">CKA</p>
-            <p class="cert-meta">CNCF · Planeada</p>
+        </a>
+        <div class="cert status-progress">
+          <span class="corner" aria-hidden="true"></span>
+          <img src="/img/certs/aws-cloudops-associate.png" alt="AWS Certified Cloud Operations Engineer — Associate">
+          <div>
+            <div class="name">AWS CloudOps — Associate</div>
+            <div class="meta">en curso</div>
           </div>
+        </div>
+        <div class="cert status-planned">
+          <img src="/img/certs/aws-devops-professional.png" alt="AWS Certified DevOps Engineer — Professional">
+          <div>
+            <div class="name">AWS DevOps — Professional</div>
+            <div class="meta">planificada · Q3 2026</div>
+          </div>
+        </div>
+        <div class="cert status-planned">
+          <img src="/img/certs/cka.png" alt="CKA: Certified Kubernetes Administrator">
+          <div>
+            <div class="name">CKA — Kubernetes Administrator</div>
+            <div class="meta">planificada · Q3 2026</div>
+          </div>
+        </div>
+      </div>
 
+      <div class="roadmap">
+        <div class="roadmap-track">
+          <div class="roadmap-cell done"><div class="q">Q3 '25</div><div class="item">AWS Developer Assoc.</div></div>
+          <div class="roadmap-cell done"><div class="q">Q2 '26</div><div class="item">Terraform Assoc.</div></div>
+          <div class="roadmap-cell now"><div class="q">Q2 '26</div><div class="item">AWS CloudOps</div></div>
+          <div class="roadmap-cell"><div class="q">Q3 '26</div><div class="item">AWS DevOps Pro</div></div>
+          <div class="roadmap-cell"><div class="q">Q3 '26</div><div class="item">CKA</div></div>
+          <div class="roadmap-cell"><div class="q">Q4 '26</div><div class="item">CKAD / OTel / ArgoCD <span class="tentative">· tentativa</span></div></div>
         </div>
       </div>
     </section>
 
-  </main>
+    <!-- ═══════════════════ CONNECT ═══════════════════ -->
+    <section id="connect">
+      <div class="eyebrow"><span class="num">05</span> · contacto</div>
 
-  <footer class="site-footer">
-    <span>&copy; 2026 Rubén Ricaurte</span>
+      <div class="connect-cta">
+        <div>
+          <h2>¿Qué estás <em>construyendo</em>?</h2>
+          <p>
+            ¿Buscás un ingeniero de plataforma, armando algo nuevo en AWS, o
+            querés intercambiar notas sobre CI/CD? El buzón está abierto —
+            sin ping-pong.
+          </p>
+        </div>
+        <div class="contact-list">
+          <a class="contact-row" href="mailto:ricaurtef@gmail.com">
+            <span class="k">email</span>
+            <span class="v">ricaurtef@gmail.com</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="contact-row" href="https://linkedin.com/in/rubén-ricaurte-francia-0583b5127" target="_blank" rel="noopener noreferrer">
+            <span class="k">linkedin</span>
+            <span class="v">rubén-ricaurte-francia</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="contact-row" href="https://github.com/ricaurtef" target="_blank" rel="noopener noreferrer">
+            <span class="k">github</span>
+            <span class="v">ricaurtef</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ═══════════════════ FOOT ═══════════════════ -->
+  <footer class="foot">
+    <div class="trail">&copy; 2026 Rubén Ricaurte · ricaurtef.com</div>
+    <div class="build">
+      <span class="ok">● build verde</span>
+      <span>·</span>
+      <span>cloudfront sa-east-1</span>
+    </div>
   </footer>
+
+  <script>
+    (function () {
+      function updateClock() {
+        var d  = new Date();
+        var hh = String(d.getHours()).padStart(2, '0');
+        var mm = String(d.getMinutes()).padStart(2, '0');
+        var el = document.getElementById('clock-txt');
+        if (el) el.textContent = hh + ':' + mm;
+      }
+      updateClock();
+      setInterval(updateClock, 30000);
+    })();
+  </script>
 
 </body>
 </html>
