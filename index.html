@@ -154,21 +154,41 @@
               <span class="chip">Terraform</span>
             </div>
           </div>
-<pre class="ascii" aria-hidden="true">GitHub ──▶ <span class="hl">OIDC</span> ──▶ mgmt acct
-                        │
-                AssumeRole (chain)
-                        │
-                        ▼
-           ┌──── prod acct ─────┐
-           │                    │
-           │  S3 ─▶ <span class="hl">CloudFront</span>  │
-           │            │       │
-           │        ACM + R53   │
-           └────────────┬───────┘
-                        │
-                        ▼
-                  <span class="hl">ricaurtef.com</span>
-                <span class="dim">(tls · us-east-1)</span></pre>
+<svg class="arch-svg" viewBox="0 0 280 330" role="img" aria-labelledby="arch-title-en arch-desc-en">
+  <title id="arch-title-en">aws-cloudfront-site architecture</title>
+  <desc id="arch-desc-en">GitHub Actions federates via OIDC into the management AWS account, chains roles into the production account hosting S3 behind CloudFront with ACM and Route 53, serving ricaurtef.com over TLS in us-east-1.</desc>
+
+  <text class="t hl" x="30" y="22" text-anchor="middle">GitHub</text>
+  <line class="s" x1="54" y1="18" x2="72" y2="18"/>
+  <polygon class="a" points="72,14 80,18 72,22"/>
+  <text class="t" x="100" y="22" text-anchor="middle">OIDC</text>
+  <line class="s" x1="120" y1="18" x2="130" y2="18"/>
+  <polygon class="a" points="130,14 138,18 130,22"/>
+  <text class="t hl-g" x="180" y="22" text-anchor="middle">MGMT Account</text>
+
+  <line class="s" x1="180" y1="30" x2="180" y2="52"/>
+  <text class="t" x="180" y="64" text-anchor="middle">AssumeRole (chain)</text>
+  <line class="s" x1="180" y1="72" x2="180" y2="102"/>
+  <polygon class="a" points="176,100 184,100 180,110"/>
+
+  <rect class="s s-g" x="40" y="122" width="220" height="120" rx="2"/>
+  <rect class="bg-mask" x="138" y="116" width="84" height="12"/>
+  <text class="t hl-g" x="180" y="125" text-anchor="middle">PROD Account</text>
+
+  <text class="t" x="80" y="165" text-anchor="middle">S3</text>
+  <line class="s" x1="96" y1="161" x2="118" y2="161"/>
+  <polygon class="a" points="118,157 126,161 118,165"/>
+  <text class="t hl" x="180" y="165" text-anchor="middle">CloudFront</text>
+
+  <line class="s" x1="180" y1="173" x2="180" y2="196"/>
+  <text class="t" x="180" y="210" text-anchor="middle">ACM + R53</text>
+
+  <line class="s" x1="180" y1="242" x2="180" y2="268"/>
+  <polygon class="a" points="176,266 184,266 180,276"/>
+
+  <text class="t hl" x="180" y="296" text-anchor="middle">ricaurtef.com</text>
+  <text class="t dim" x="180" y="312" text-anchor="middle">(tls · us-east-1)</text>
+</svg>
         </div>
 
         <a class="card half" href="https://github.com/ricaurtef/aws-account-foundation" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
