@@ -446,6 +446,7 @@ html[data-theme="light"] .feature .chip { background: rgba(0, 0, 0, 0.04); }
   box-sizing: border-box;
 }
 .arch-svg .s   { stroke: var(--teal); stroke-width: 1.2; fill: none; stroke-linecap: round; }
+.arch-svg .s-g { stroke: var(--green); }
 .arch-svg .a   { fill: var(--teal); }
 .arch-svg .bg-mask { fill: var(--bg); }
 .arch-svg .t   {
@@ -455,8 +456,13 @@ html[data-theme="light"] .feature .chip { background: rgba(0, 0, 0, 0.04); }
   font-weight: 400;
   letter-spacing: 0.02em;
 }
-.arch-svg .hl  { fill: var(--orange); }
-.arch-svg .dim { fill: var(--dim); }
+.arch-svg .hl   { fill: var(--orange); }
+.arch-svg .hl-g { fill: var(--green); }
+.arch-svg .dim  { fill: var(--dim); }
+
+/* Light theme override: accounts use Gruvbox "hard" green for contrast on cream bg */
+html[data-theme="light"] .arch-svg .s-g  { stroke: #79740e; }
+html[data-theme="light"] .arch-svg .hl-g { fill:   #79740e; }
 
 /* ═══════════════════ STACK ═══════════════════ */
 .skill-group { margin-bottom: 1.75rem; }
