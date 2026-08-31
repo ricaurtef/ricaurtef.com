@@ -532,7 +532,7 @@ html[data-theme="light"] .cert.status-progress .corner { box-shadow: 0 0 0 3px r
 }
 .roadmap-track {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0;
   border-top: 1px solid var(--border-2);
   border-bottom: 1px solid var(--border-2);
@@ -657,8 +657,7 @@ html[data-theme="light"] .contact-row { background: rgba(0, 0, 0, 0.04); }
   .roadmap-track { grid-template-columns: repeat(3, 1fr); }
   .roadmap-cell:nth-child(3) { border-right: none; }
   .roadmap-cell:nth-child(4),
-  .roadmap-cell:nth-child(5),
-  .roadmap-cell:nth-child(6) {
+  .roadmap-cell:nth-child(5) {
     border-top: 1px dashed var(--border-2);
   }
 
