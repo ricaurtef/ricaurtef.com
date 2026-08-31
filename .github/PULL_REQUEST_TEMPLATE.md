@@ -19,6 +19,10 @@
 
 Preview deploy:
 
+<!-- Delete this block, heading included, when the diff touches no path in preview.yml's
+     `paths:` trigger — a .github/, tooling or docs-only change gets no preview.
+     If both blocks go, the items sit directly under ## Test plan. -->
+
 - [ ] <action> -> <observable result>
 
 After merge:
